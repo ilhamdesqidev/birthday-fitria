@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday - Fitria Rahmah</title>
+  
+  <!-- Sophisticated Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --warm-gold: #C9A961;
+      --soft-gold: #D4B896;
+      --cream: #F8F6F1;
+      --warm-beige: #F2EFE8;
+      --sage-green: #9BAE87;
+      --ivory: #FEFCF7;
+      --charcoal: #2C2C2C;
+      --soft-gray: #6B6B6B;
+      --light-gray: #F0F0F0;
+      --white: #FFFFFF;
+      --gradient-elegant: linear-gradient(135deg, #F8F6F1 0%, #D4B896 50%, #C9A961 100%);
+      --gradient-soft: linear-gradient(135deg, #FEFCF7 0%, #F2EFE8 100%);
+      --shadow-elegant: 0 10px 30px rgba(201, 169, 97, 0.12);
+      --shadow-soft: 0 5px 15px rgba(201, 169, 97, 0.08);
+      --border-radius: 20px;
+      --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body, html {
+      font-family: 'Inter', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--gradient-elegant);
+      color: var(--charcoal);
+      position: relative;
+    }
+
+    /* Subtle Background Pattern */
+    .elegant-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background: 
+        radial-gradient(circle at 25% 25%, rgba(201, 169, 97, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(155, 174, 135, 0.05) 0%, transparent 50%),
+        linear-gradient(135deg, 
+          rgba(254, 252, 247, 0.3) 0%, 
+          rgba(242, 239, 232, 0.2) 100%
+        );
+      animation: subtleShift 30s ease-in-out infinite;
+    }
+
+    @keyframes subtleShift {
+      0%, 100% { 
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      50% { 
+        transform: scale(1.02) rotate(0.5deg);
+        opacity: 0.9;
+      }
+    }
+
+    /* Minimal Floating Elements */
+    .floating-elements {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .floating-dot {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: var(--warm-gold);
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: gentleFloat 25s infinite linear;
+    }
+
+    @keyframes gentleFloat {
+      0% { 
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+      }
+      10% { 
+        opacity: 0.6;
+        transform: translateY(80vh) scale(1);
+      }
+      90% { 
+        opacity: 0.3;
+        transform: translateY(-10vh) scale(0.8);
+      }
+      100% { 
+        opacity: 0;
+        transform: translateY(-20vh) scale(0);
+      }
+    }
+
+    /* Page Container */
+    .page-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+      z-index: 10;
+    }
+
+    .page-container.hidden {
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+      pointer-events: none;
+      filter: blur(3px);
+    }
+
+    .page-container.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+      filter: blur(0);
+    }
+
+    /* Elegant Container */
+    .elegant-container {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: var(--border-radius);
+      border: 1px solid rgba(201, 169, 97, 0.2);
+      box-shadow: var(--shadow-elegant);
+      padding: clamp(2.5rem, 5vw, 4rem);
+      max-width: 90vw;
+      max-height: 85vh;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .elegant-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--warm-gold) 30%, 
+        var(--soft-gold) 70%, 
+        transparent 100%
+      );
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    /* Sophisticated Typography */
+    .title-elegant {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 7vw, 4.5rem);
+      font-weight: 400;
+      color: var(--charcoal);
+      text-align: center;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle-refined {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      font-weight: 400;
+      text-align: center;
+      color: var(--soft-gray);
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    /* Refined Buttons */
+    .btn-elegant {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem 2.2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--charcoal);
+      background: var(--white);
+      border: 2px solid var(--warm-gold);
+      border-radius: 50px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-elegant::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient-soft);
+      transition: left 0.5s ease;
+      z-index: -1;
+    }
+
+    .btn-elegant:hover::before {
+      left: 0;
+    }
+
+    .btn-elegant:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-elegant);
+      border-color: var(--soft-gold);
+    }
+
+    .btn-elegant:active {
+      transform: translateY(0);
+    }
+
+    /* Welcome Page */
+    .welcome-elegant {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .celebration-icon {
+      font-size: clamp(3rem, 8vw, 5rem);
+      margin-bottom: 1.5rem;
+      color: var(--warm-gold);
+      animation: gentlePulse 4s ease-in-out infinite;
+    }
+
+    @keyframes gentlePulse {
+      0%, 100% { 
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% { 
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+    }
+
+    .name-elegant {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 500;
+      color: var(--soft-gold);
+      margin: 1.5rem 0;
+      min-height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .typing-cursor-elegant {
+      display: inline-block;
+      width: 2px;
+      height: 1.2em;
+      background: var(--warm-gold);
+      margin-left: 3px;
+      animation: blinkElegant 1.5s infinite;
+    }
+
+    @keyframes blinkElegant {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    /* Gallery Page */
+    .gallery-refined {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 2.5rem auto;
+    }
+
+    .photo-frame {
+      position: relative;
+      aspect-ratio: 4/3;
+      border-radius: 15px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      background: var(--white);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--light-gray);
+    }
+
+    .photo-frame:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-elegant);
+      border-color: var(--warm-gold);
+    }
+
+    .photo-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: var(--gradient-soft);
+      color: var(--soft-gray);
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: center;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    .photo-placeholder i {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+      color: var(--warm-gold);
+      opacity: 0.8;
+    }
+
+    .photo-frame:hover .photo-placeholder {
+      background: var(--gradient-elegant);
+    }
+
+    .photo-frame:hover .photo-placeholder i {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      display: none;
+    }
+
+    .photo-frame.loaded img {
+      display: block;
+    }
+
+    .photo-frame.loaded .photo-placeholder {
+      display: none;
+    }
+
+    .photo-frame:hover img {
+      transform: scale(1.08);
+    }
+
+    /* Loading animation */
+    .photo-loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--light-gray);
+      border-top: 3px solid var(--warm-gold);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      display: none;
+    }
+
+    .photo-frame.loading .photo-loading {
+      display: block;
+    }
+
+    .photo-frame.loading .photo-placeholder i,
+    .photo-frame.loading .photo-placeholder span {
+      opacity: 0.3;
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    /* Photo Modal */
+    .photo-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .photo-modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .photo-modal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: var(--shadow-elegant);
+      transform: scale(0.8);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-modal.active img {
+      transform: scale(1);
+    }
+
+    .photo-modal-close {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-radius: 50%;
+      color: var(--charcoal);
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .photo-modal-close:hover {
+      background: var(--white);
+      transform: scale(1.1);
+    }
+
+    /* Video Page */
+    .video-refined {
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 2.5rem 0;
+      background: var(--white);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--light-gray);
+    }
+
+    .video-overlay {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-elegant);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .video-overlay:hover {
+      background: var(--gradient-soft);
+    }
+
+    .play-elegant {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--warm-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: var(--warm-gold);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .play-elegant:hover {
+      transform: scale(1.1);
+      background: var(--warm-gold);
+      color: var(--white);
+      box-shadow: var(--shadow-elegant);
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      border-radius: 13px;
+    }
+
+    /* Message Page */
+    .message-refined {
+      max-width: 650px;
+      text-align: left;
+    }
+
+    .message-content {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(1.2rem, 3vw, 1.4rem);
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 3rem;
+      font-weight: 400;
+    }
+
+    .message-content p {
+      margin-bottom: 1.8rem;
+      text-align: justify;
+    }
+
+    .signature-elegant {
+      text-align: right;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--warm-gold);
+      margin-top: 2rem;
+      font-style: italic;
+    }
+
+    /* Navigation */
+    .nav-elegant {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5rem;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(201, 169, 97, 0.2);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .nav-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--light-gray);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .nav-dot.active {
+      background: var(--warm-gold);
+      transform: scale(1.4);
+    }
+
+    .nav-dot:hover:not(.active) {
+      background: var(--soft-gold);
+      transform: scale(1.2);
+    }
+
+    /* Music Control */
+    .music-elegant {
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(201, 169, 97, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      z-index: 100;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .music-elegant:hover {
+      transform: scale(1.05);
+      background: var(--cream);
+      border-color: var(--warm-gold);
+    }
+
+    .music-elegant i {
+      font-size: 1.2rem;
+      color: var(--warm-gold);
+    }
+
+    .music-elegant.playing {
+      background: var(--warm-gold);
+      border-color: var(--soft-gold);
+    }
+
+    .music-elegant.playing i {
+      color: var(--white);
+    }
+
+    /* Mobile Optimizations */
+    @media (max-width: 768px) {
+      .elegant-container {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+        max-height: 90vh;
+      }
+
+      .gallery-refined {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .nav-elegant {
+        bottom: 1.5rem;
+        padding: 0.6rem 1.2rem;
+      }
+
+      .music-elegant {
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 45px;
+        height: 45px;
+      }
+
+      .music-elegant i {
+        font-size: 1.1rem;
+      }
+
+      .btn-elegant {
+        padding: 0.9rem 1.8rem;
+        font-size: 0.95rem;
+      }
+
+      .message-content {
+        text-align: left;
+      }
+
+      .photo-modal-close {
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Elegant Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(240, 240, 240, 0.5);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--warm-gold);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--soft-gold);
+    }
+
+    /* Notification */
+    .notification-elegant {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(201, 169, 97, 0.3);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      color: var(--charcoal);
+      font-size: 0.9rem;
+      font-weight: 400;
+      z-index: 1000;
+      animation: slideInElegant 0.4s ease;
+      max-width: 300px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    @keyframes slideInElegant {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideOutElegant {
+      from { transform: translateX(0); opacity: 1; }
+      to { transform: translateX(100%); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Elegant Background -->
+  <div class="elegant-bg"></div>
+
+  <!-- Floating Elements -->
+  <div class="floating-elements" id="floatingElements"></div>
+
+  <!-- Music Control -->
+  <div class="music-elegant" id="musicControl" title="Background Music">
+    <i class="fas fa-volume-mute" id="musicIcon"></i>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-elegant" id="navigation">
+    <div class="nav-dot active" data-page="1"></div>
+    <div class="nav-dot" data-page="2"></div>
+    <div class="nav-dot" data-page="3"></div>
+    <div class="nav-dot" data-page="4"></div>
+  </div>
+
+  <!-- Photo Modal -->
+  <div class="photo-modal" id="photoModal">
+    <button class="photo-modal-close" onclick="closePhotoModal()">
+      <i class="fas fa-times"></i>
+    </button>
+    <img id="modalImage" src="" alt="Photo">
+  </div>
+
+  <!-- Page 1: Elegant Welcome -->
+  <div class="page-container active" id="page1">
+    <div class="elegant-container">
+      <div class="welcome-elegant">
+        <div class="celebration-icon">🌺</div>
+        <h1 class="title-elegant">Happy Birthday</h1>
+        <div class="name-elegant" id="nameDisplay">
+          <span id="typedName"></span>
+          <span class="typing-cursor-elegant"></span>
+        </div>
+        <p class="subtitle-refined">02 Oktober 2025</p>
+        <button class="btn-elegant" onclick="navigateToPage(2)">
+          <i class="fas fa-images"></i>
+          View Memories
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 2: Refined Gallery -->
+  <div class="page-container hidden" id="page2">
+    <div class="elegant-container">
+      <h2 class="title-elegant" style="font-size: clamp(2.2rem, 6vw, 3.5rem);">Cherished Moments</h2>
+      <p style="text-align: center; color: var(--soft-gray); margin-bottom: 1.5rem; font-style: italic;">Click on each memory to reveal the photo</p>
+      <div class="gallery-refined" id="photoGallery">
+        <!-- Photos will be generated by JavaScript -->
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <button class="btn-elegant" onclick="navigateToPage(3)">
+          <i class="fas fa-play"></i>
+          Special Video
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 3: Refined Video -->
+  <div class="page-container hidden" id="page3">
+    <div class="elegant-container">
+      <div class="video-refined">
+        <h2 class="title-elegant" style="font-size: clamp(2.2rem, 6vw, 3.5rem);">Birthday Sayang</h2>
+        <div class="video-container" id="videoContainer">
+          <div class="video-overlay" onclick="playVideo()">
+            <button class="play-elegant">
+              <i class="fas fa-play"></i>
+            </button>
+            <p style="font-size: 1.1rem; color: var(--soft-gray); margin: 0;">Klik untuk melihat foto</p>
+          </div>
+          <video id="birthdayVideo" controls style="display: none;">
+            <source src="birthday-video.mp4" type="video/mp4">
+            Video not supported
+          </video>
+        </div>
+        <button class="btn-elegant" onclick="navigateToPage(4)">
+          <i class="fas fa-envelope"></i>
+          Baca Pesan Spesial
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 4: Elegant Message -->
+  <div class="page-container hidden" id="page4">
+    <div class="elegant-container">
+      <div class="message-refined">
+        <h2 class="title-elegant" style="font-size: clamp(2.2rem, 6vw, 3.5rem); text-align: center; margin-bottom: 2rem;">Pesan Untuk Wanita Spesialku </h2>
+        <div class="message-content">
+          <p>On this beautiful day, I want to take a moment to celebrate not just your birthday, but the wonderful person you are. Your grace, kindness, and strength inspire everyone around you.</p>
+          <p>As you step into another year of life, may it be filled with meaningful connections, personal growth, and moments that make your heart smile. You deserve all the happiness this world has to offer.</p>
+          <p>Thank you for being such a special part of my life. Your presence brings warmth and joy to every gathering, and your friendship is truly treasured.</p>
+        </div>
+        <div class="signature-elegant">
+          With love and best wishes,<br>
+          <strong>[Ilham Desqi Wardana ( your brondong)]</strong>
+        </div>
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <button class="btn-elegant" onclick="navigateToPage(1)">
+            <i class="fas fa-heart"></i>
+            kembali ke awal
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Configuration - EDIT THESE SETTINGS
+    const CONFIG = {
+      recipientName: "Fitriaa Rahmahh", // Change this name
+      backgroundMusic: [
+        'sayang.mp3'
+      ],
+      elementCount: { desktop: 15, mobile: 8 },
+      
+      // PHOTO CONFIGURATION - Add your photos here
+      photos: [
+        {
+          title: "Sayang",
+          filename: "sayang (1).jpg", // Put your photo with this exact name in the same folder
+          description: "Kael cake"
+        },
+        {
+          title: "Fitria", 
+          filename: "sayang (2).jpg",
+          description: "kue ulang tahun bapa"
+        },
+        {
+          title: "SMK",
+          filename: "sayang (3).jpg", 
+          description: "First time taking a photo together"
+        },
+        {
+          title: "Taman Sempur",
+          filename: "sayang (4).jpg",
+          description: "first time jogging together"
+        },
+        {
+          title: "our hand",
+          filename: "sayang (5).jpg",
+          description: "Holding hands"
+        },
+        {
+          title: "sayangg",
+          filename: "sayangg (1).jpg",
+          description: "beautiful moments"  
+        },
+        {
+          title: "gray white", 
+          filename: "sayang (6).jpg",
+          description: "photo in gray white"
+        },
+        {
+          title: "Unforgettable Times",
+          filename: "sayang (8).jpg", 
+          description: "Memories to treasure"
+        },
+        {
+          title: "Joyful Memories",
+          filename: "sayang (9).jpg",
+          description: "Happy times together"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (10).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayangg (2).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (11).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (12).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (13).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (14).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (15).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayangg (3).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (16).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (17).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayangg (5).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (18).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "Beautiful Journeys",
+          filename: "sayang (19).jpg",
+          description: "Adventures shared"
+        },
+        {
+          title: "cinematic photo",
+          filename: "sayang (20).jpg",
+          description: "cinema style"
+        },
+        {
+          title: "exited photo",
+          filename: "sayangg (4).jpg",
+          description: "overcome by cuteness"
+        },
+        {
+          title: "foot photo",
+          filename: "sayang (21).jpg",
+          description: "our feet"
+        },
+        {
+          title: "sayang",
+          filename: "sayang (22).jpg",
+          description: "beatiful"
+        },
+        {
+          title: "moments together",
+          filename: "sayangg (6).jpg",
+          description: "mading smk"
+        }
+      ]
+    };
+
+    // Global Variables
+    let currentPage = 1;
+    let backgroundMusic = null;
+    let isPlaying = false;
+    let isInitialized = false;
+    let loadedPhotos = new Set();
+
+    // Music System
+    function initializeMusic() {
+      if (isInitialized) return;
+      
+      try {
+        const randomTrack = CONFIG.backgroundMusic[Math.floor(Math.random() * CONFIG.backgroundMusic.length)];
+        backgroundMusic = new Audio(randomTrack);
+        backgroundMusic.loop = true;
+        backgroundMusic.volume = 0.3;
+        
+        backgroundMusic.addEventListener('canplay', () => {
+          console.log('🎵 Music ready');
+          isInitialized = true;
+        });
+        
+        backgroundMusic.addEventListener('play', () => {
+          updateMusicUI(true);
+        });
+        
+        backgroundMusic.addEventListener('pause', () => {
+          updateMusicUI(false);
+        });
+        
+        backgroundMusic.addEventListener('error', (e) => {
+          console.warn('🎵 Music failed to load:', e);
+          showNotification('Background music unavailable');
+        });
+        
+        backgroundMusic.load();
+      } catch (error) {
+        console.error('🎵 Music initialization failed:', error);
+      }
+    }
+
+    function toggleMusic() {
+      if (!backgroundMusic) {
+        initializeMusic();
+        return;
+      }
+
+      if (isPlaying) {
+        backgroundMusic.pause();
+        isPlaying = false;
+      } else {
+        backgroundMusic.play().then(() => {
+          isPlaying = true;
+        }).catch(error => {
+          console.warn('🎵 Playback failed:', error);
+          showNotification('Click music button to enable sound');
+        });
+      }
+    }
+
+    function updateMusicUI(playing) {
+      const musicControl = document.getElementById('musicControl');
+      const musicIcon = document.getElementById('musicIcon');
+      
+      if (playing) {
+        musicControl.classList.add('playing');
+        musicIcon.classList.remove('fa-volume-mute');
+        musicIcon.classList.add('fa-music');
+        isPlaying = true;
+      } else {
+        musicControl.classList.remove('playing');
+        musicIcon.classList.remove('fa-music');
+        musicIcon.classList.add('fa-volume-mute');
+        isPlaying = false;
+      }
+    }
+
+    // Navigation
+    function navigateToPage(targetPage) {
+      if (targetPage === currentPage || targetPage < 1 || targetPage > 4) return;
+
+      // Initialize music on first interaction
+      if (!isInitialized) {
+        initializeMusic();
+        setTimeout(() => {
+          if (backgroundMusic && !isPlaying) {
+            toggleMusic();
+          }
+        }, 500);
+      }
+
+      // Update navigation dots
+      updateNavigation(targetPage);
+
+      // Hide current page
+      const currentPageEl = document.getElementById(`page${currentPage}`);
+      currentPageEl.classList.remove('active');
+      currentPageEl.classList.add('hidden');
+
+      // Show target page
+      setTimeout(() => {
+        const targetPageEl = document.getElementById(`page${targetPage}`);
+        targetPageEl.classList.remove('hidden');
+        targetPageEl.classList.add('active');
+        currentPage = targetPage;
+        
+        handlePageEffects(targetPage);
+      }, 200);
+    }
+
+    function updateNavigation(activePage) {
+      document.querySelectorAll('.nav-dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index + 1 === activePage);
+      });
+    }
+
+    function handlePageEffects(pageNumber) {
+      switch(pageNumber) {
+        case 1:
+          if (!document.getElementById('typedName').textContent) {
+            startTypingAnimation();
+          }
+          break;
+        case 3:
+          resetVideo();
+          break;
+      }
+    }
+
+    // Visual Effects
+    function createFloatingElements() {
+      const container = document.getElementById('floatingElements');
+      const isMobile = window.innerWidth < 768;
+      const count = isMobile ? CONFIG.elementCount.mobile : CONFIG.elementCount.desktop;
+      
+      container.innerHTML = '';
+
+      for (let i = 0; i < count; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'floating-dot';
+        
+        dot.style.left = Math.random() * 100 + '%';
+        dot.style.animationDelay = Math.random() * 25 + 's';
+        dot.style.animationDuration = (Math.random() * 15 + 20) + 's';
+        
+        container.appendChild(dot);
+      }
+    }
+
+    function startTypingAnimation() {
+      const nameElement = document.getElementById('typedName');
+      const name = CONFIG.recipientName;
+      let index = 0;
+
+      nameElement.textContent = '';
+
+      function typeNextChar() {
+        if (index < name.length) {
+          nameElement.textContent += name.charAt(index);
+          index++;
+          setTimeout(typeNextChar, 120);
+        }
+      }
+
+      setTimeout(typeNextChar, 1000);
+    }
+
+    // Enhanced Gallery with Photo Loading
+    function createGallery() {
+      const gallery = document.getElementById('photoGallery');
+      
+      CONFIG.photos.forEach((photo, index) => {
+        const frame = document.createElement('div');
+        frame.className = 'photo-frame';
+        frame.dataset.photoIndex = index;
+        frame.onclick = () => loadAndShowPhoto(index);
+        
+        frame.innerHTML = `
+          <div class="photo-placeholder">
+            <i class="fas fa-camera"></i>
+            <span>${photo.title}</span>
+          </div>
+          <div class="photo-loading"></div>
+          <img src="" alt="${photo.title}" onclick="event.stopPropagation(); openPhotoModal('${photo.filename}', '${photo.title}')">
+        `;
+        
+        gallery.appendChild(frame);
+      });
+    }
+
+    function loadAndShowPhoto(index) {
+      const frame = document.querySelector(`[data-photo-index="${index}"]`);
+      const photo = CONFIG.photos[index];
+      
+      if (loadedPhotos.has(index)) {
+        // Photo already loaded, just show modal
+        openPhotoModal(photo.filename, photo.title);
+        return;
+      }
+
+      // Show loading state
+      frame.classList.add('loading');
+      
+      // Create new image to test if file exists
+      const img = new Image();
+      
+      img.onload = function() {
+        // Photo loaded successfully
+        frame.classList.remove('loading');
+        frame.classList.add('loaded');
+        
+        const frameImg = frame.querySelector('img');
+        frameImg.src = photo.filename;
+        
+        loadedPhotos.add(index);
+        
+        // Auto-open modal after loading
+        setTimeout(() => {
+          openPhotoModal(photo.filename, photo.title);
+        }, 300);
+        
+        showNotification(`📸 ${photo.title} loaded!`);
+      };
+      
+      img.onerror = function() {
+        // Photo not found
+        frame.classList.remove('loading');
+        showNotification(`❌ Photo "${photo.filename}" not found. Please add it to the same folder as this HTML file.`);
+        
+        // Show placeholder message
+        const placeholder = frame.querySelector('.photo-placeholder span');
+        placeholder.innerHTML = `${photo.title}<br><small style="color: var(--soft-gold); margin-top: 0.5rem;">Photo not found</small>`;
+      };
+      
+      // Start loading
+      img.src = photo.filename;
+    }
+
+    function openPhotoModal(filename, title) {
+      const modal = document.getElementById('photoModal');
+      const modalImg = document.getElementById('modalImage');
+      
+      modalImg.src = filename;
+      modalImg.alt = title;
+      modal.classList.add('active');
+      
+      // Prevent body scroll
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePhotoModal() {
+      const modal = document.getElementById('photoModal');
+      modal.classList.remove('active');
+      
+      // Restore body scroll
+      document.body.style.overflow = 'hidden'; // Keep hidden for main layout
+    }
+
+    // Video Player
+    function playVideo() {
+      const overlay = document.querySelector('.video-overlay');
+      const video = document.getElementById('birthdayVideo');
+      
+      overlay.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+    }
+
+    function resetVideo() {
+      const overlay = document.querySelector('.video-overlay');
+      const video = document.getElementById('birthdayVideo');
+      
+      video.pause();
+      video.currentTime = 0;
+      video.style.display = 'none';
+      overlay.style.display = 'flex';
+    }
+
+    // Notifications
+    function showNotification(message) {
+      const notification = document.createElement('div');
+      notification.className = 'notification-elegant';
+      notification.textContent = message;
+      
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.style.animation = 'slideOutElegant 0.4s ease forwards';
+        setTimeout(() => {
+          if (notification.parentNode) {
+            notification.parentNode.removeChild(notification);
+          }
+        }, 400);
+      }, 4000);
+    }
+
+    // Event Listeners
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize visual effects
+      createFloatingElements();
+      createGallery();
+      
+      // Start typing animation after short delay
+      setTimeout(() => {
+        startTypingAnimation();
+      }, 500);
+
+      // Navigation dots click handlers
+      document.querySelectorAll('.nav-dot').forEach(dot => {
+        dot.addEventListener('click', () => {
+          const page = parseInt(dot.dataset.page);
+          navigateToPage(page);
+        });
+      });
+
+      // Music control
+      document.getElementById('musicControl').addEventListener('click', toggleMusic);
+
+      // Modal close on background click
+      document.getElementById('photoModal').addEventListener('click', (e) => {
+        if (e.target.id === 'photoModal') {
+          closePhotoModal();
+        }
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        // Don't handle keys when modal is open
+        if (document.getElementById('photoModal').classList.contains('active')) {
+          if (e.key === 'Escape') {
+            closePhotoModal();
+          }
+          return;
+        }
+
+        switch(e.key) {
+          case 'ArrowRight':
+          case ' ':
+            if (currentPage < 4) navigateToPage(currentPage + 1);
+            break;
+          case 'ArrowLeft':
+            if (currentPage > 1) navigateToPage(currentPage - 1);
+            break;
+          case 'Home':
+            navigateToPage(1);
+            break;
+          case 'End':
+            navigateToPage(4);
+            break;
+          case 'm':
+          case 'M':
+            toggleMusic();
+            break;
+          case 'Escape':
+            closePhotoModal();
+            break;
+        }
+      });
+
+      // Handle window resize
+      window.addEventListener('resize', () => {
+        createFloatingElements();
+      });
+
+      // Auto-play music after user interaction (required by browsers)
+      document.addEventListener('click', function initAutoPlay() {
+        if (!isInitialized) {
+          initializeMusic();
+        }
+        document.removeEventListener('click', initAutoPlay);
+      });
+
+      // Show welcome message
+      setTimeout(() => {
+        showNotification('Welcome! Click on memories to reveal photos 🎉');
+      }, 2000);
+    });
+
+    // Touch/Swipe Support for Mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    document.addEventListener('touchstart', e => {
+      // Don't handle swipes when modal is open
+      if (document.getElementById('photoModal').classList.contains('active')) {
+        return;
+      }
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    document.addEventListener('touchend', e => {
+      // Don't handle swipes when modal is open
+      if (document.getElementById('photoModal').classList.contains('active')) {
+        return;
+      }
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+      
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0 && currentPage < 4) {
+          // Swipe left - next page
+          navigateToPage(currentPage + 1);
+        } else if (diff < 0 && currentPage > 1) {
+          // Swipe right - previous page
+          navigateToPage(currentPage - 1);
+        }
+      }
+    }
+
+    // Prevent context menu on long press (mobile)
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Add some easter eggs
+    let clickCount = 0;
+    document.querySelector('.celebration-icon').addEventListener('click', () => {
+      clickCount++;
+      if (clickCount === 5) {
+        showNotification('🎊 Special surprise unlocked! 🎊');
+        document.querySelector('.celebration-icon').style.animation = 'gentlePulse 0.5s ease-in-out infinite';
+        clickCount = 0;
+      }
+    });
+  </script>
+</body>
+</html>
